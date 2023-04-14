@@ -28,8 +28,9 @@ function App() {
           <div class="nav_wrapper_left">
             <div class="nav_wrapper_left_content">
               <div class="nav_shop_name">
-                <p>YASASHII</p>
-                <p>HEBIKO</p>
+                <p>
+                  YASASHII <br></br>HEBIKOa
+                </p>
               </div>
             </div>
           </div>
