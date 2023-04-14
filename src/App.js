@@ -4,11 +4,15 @@ import "./App.scss";
 function App() {
   return (
     <>
+      <header>
+        <section>
+          <div></div>
+        </section>
+      </header>
       <main>
         <div class="article">
           <div class="section" id="sec01">
-            <h2>Section1</h2>
-            <p>ここは1番目のコンテンツです。</p>
+            <div class="section_container"></div>
           </div>
           <div class="section" id="sec02">
             <h2>Section2</h2>
@@ -28,8 +32,9 @@ function App() {
           <div class="nav_wrapper_left">
             <div class="nav_wrapper_left_content">
               <div class="nav_shop_name">
+                <div class="nav_logo"></div>
                 <p>
-                  YASASHII <br></br>HEBIKOa
+                  YASASHII <br></br>HEBIKO
                 </p>
               </div>
             </div>
