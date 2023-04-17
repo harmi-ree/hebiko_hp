@@ -32,18 +32,50 @@ function App() {
           <div class="section_shop_info" id="sec04">
             <div class="section_container">
               <h2>店舗情報</h2>
-              <h4>住所</h4>
-              <p>大阪府松原市阿保6-1-20</p>
+              <ul class="shop_info_detail">
+                <li>
+                  <span class="shop_info_title">営業時間</span>
+                  <span class="shop_info_child">
+                    AM 10:00 ~ PM 18:00
+                    <br />
+                    定休日　月・火・木・日・他(不定休)
+                  </span>
+                </li>
+                <li>
+                  <span class="shop_info_title">TEL</span>
+                  <span class="shop_info_child">070-8593-1128</span>
+                </li>
+                <li>
+                  <span class="shop_info_title">住所</span>
+                  <span class="shop_info_child">
+                    〒580-0043 大阪府松原市阿保6-1-20
+                  </span>
+                </li>
+                <li>
+                  <span class="shop_info_title">駐車場</span>
+                  <span class="shop_info_child">
+                    軽1台（お店のすぐ横です。難易度中級）
+                  </span>
+                </li>
+                <li>
+                  <span class="shop_info_title">Mail</span>
+                  <span class="shop_info_child">yasashiihebiko@gmail.com</span>
+                </li>
+                <li>
+                  <span class="shop_info_title">アクセス</span>
+                  <span class="shop_info_child">
+                    近鉄南大阪線　河内松原駅より徒歩10分
+                  </span>
+                </li>
+                <li>
+                  <span class="shop_info_title">SNS</span>
+                  <span class="shop_info_child">instagram</span>
+                </li>
+              </ul>
+
               <div class="iframe_wrap">
-                {/* <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.3063085705473!2d135.5572390692526!3d34.5813730670089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000d971710d4213%3A0xfb8c7e6a334fe0df!2z44KE44GV44GX44GE44G444Gz5a2Q!5e0!3m2!1sja!2sjp!4v1681570345240!5m2!1sja!2sjp"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  class="googleMap"
-                ></iframe> */}
                 <iframe
-                  src="https://snazzymaps.com/embed/481681"
+                  src="https://snazzymaps.com/embed/481752"
                   width="400px"
                   height="400px"
                   class="googleMap"

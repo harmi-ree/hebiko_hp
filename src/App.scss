@@ -8,7 +8,7 @@ body {
   color: #333333;
   background-attachment: fixed;
   z-index: 1;
-  font-family: "Shippori Antique", sans-serif;
+  font-family: "Shippori Mincho", serif;
   transition: 0.7s;
 }
 
@@ -201,9 +201,25 @@ body {
   }
   .section_shop_info {
     padding: 20px;
-    height: 500px;
     @media screen and (min-width: 500px) {
       padding: 20px 125px;
+    }
+    .shop_info_detail {
+      list-style: none;
+      padding: 0;
+
+      li {
+        border-top: 1px solid #fff;
+        margin: 1rem 0;
+        .shop_info_title {
+          font-size: 14px;
+        }
+        .shop_info_child {
+          font-size: 13px;
+          display: block;
+          margin: 0.5rem 0;
+        }
+      }
     }
 
     .iframe_wrap {
