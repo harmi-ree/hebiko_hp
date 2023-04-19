@@ -199,6 +199,64 @@ body {
       width: 100%;
     }
   }
+  .section_menu {
+    padding: 20px;
+    @media screen and (min-width: 500px) {
+      padding: 20px 125px;
+    }
+    .menu_box {
+      justify-content: space-between;
+      margin: 0 0 40px 7%;
+      @media screen and (min-width: 700px) {
+        margin: 0 0 2px 7%;
+      }
+      .menu_box1 {
+        display: flex;
+        margin-top: 40px;
+        border-top: 1px solid #fff;
+      }
+      .menu_title {
+        height: fit-content;
+        margin: 0 7px;
+        width: 5vw;
+        @media screen and (min-width: 700px) {
+          margin: 0 40px;
+        }
+      }
+      .menu_child {
+        width: 67vw;
+        margin-left: auto;
+
+        .menu_img {
+          width: 100%;
+          height: 50px;
+        }
+        .menu_name {
+          width: 100%;
+          font-size: 15px;
+          margin: 0;
+          p {
+            margin: 0;
+          }
+        }
+        .menu_price {
+          width: 100%;
+          font-size: 13px;
+          margin: 0;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .section_instagram {
+    padding: 20px;
+    height: 200px;
+    @media screen and (min-width: 500px) {
+      padding: 20px 125px;
+    }
+  }
   .section_shop_info {
     padding: 20px;
     @media screen and (min-width: 500px) {
@@ -213,6 +271,9 @@ body {
         margin: 1rem 0;
         .shop_info_title {
           font-size: 14px;
+          font-weight: bold;
+          display: block;
+          margin-top: 1rem;
         }
         .shop_info_child {
           font-size: 13px;
@@ -226,6 +287,8 @@ body {
       position: relative;
       width: 100%;
       padding-top: 75%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
     .googleMap {
       border: 0;
@@ -234,6 +297,17 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
+    }
+  }
+  .section_footer {
+    padding: 14px;
+    height: 22px;
+    background-color: #c3b4a9;
+    p {
+      width: max-content;
+      margin: 0 auto;
+      font-size: 13px;
+      color: #fff;
     }
   }
 }
