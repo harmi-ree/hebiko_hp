@@ -57,7 +57,7 @@ body {
         }
 
         .nav_logo {
-          background-image: url("img/p.png");
+          background-image: url("img/hebiko_logo.png");
           background-repeat: no-repeat;
           background-size: contain;
           width: 100%;
@@ -134,7 +134,6 @@ body {
 
   .section_header {
     padding: 20px;
-    height: 500px;
     @media screen and (min-width: 500px) {
       padding: 20px 125px;
     }
@@ -189,79 +188,110 @@ body {
     }
   }
 
-  .section {
-    padding: 20px;
-    height: 500px;
+  .section_flame {
+    padding: 50px 30px;
     @media screen and (min-width: 500px) {
-      padding: 20px 125px;
+      padding: 60px 125px;
     }
     .section_container {
+      text-align: center;
       width: 100%;
     }
-  }
-  .section_menu {
-    padding: 20px;
-    @media screen and (min-width: 500px) {
-      padding: 20px 125px;
+    .section_container2 {
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      width: fit-content;
+      margin: 50px auto 0 auto;
+
+      p:nth-child(1) {
+        margin: 0;
+        font-size: 13px;
+        text-align: left;
+      }
+      p:nth-child(2) {
+        margin: 0 auto;
+        font-size: 24px;
+        padding: 11px;
+        width: fit-content;
+        letter-spacing: 0.3rem;
+      }
     }
+  }
+
+  .section_top {
+    .section_top_image {
+      background-image: url("img/top_background.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+    .section_top_logo {
+      background-image: url("img/hebiko_logo.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 30%;
+      height: 111px;
+      top: 95px;
+      left: 15%;
+    }
+  }
+
+  .section_menu {
     .menu_box {
       justify-content: space-between;
       margin: 0 0 40px 7%;
       @media screen and (min-width: 700px) {
-        margin: 0 0 2px 7%;
+        margin: 0 0 40px 2%;
       }
       .menu_box1 {
         display: flex;
         margin-top: 40px;
         border-top: 1px solid #fff;
-      }
-      .menu_title {
-        height: fit-content;
-        margin: 0 7px;
-        width: 5vw;
-        @media screen and (min-width: 700px) {
-          margin: 0 40px;
-        }
-      }
-      .menu_child {
-        width: 67vw;
-        margin-left: auto;
 
-        .menu_img {
-          width: 100%;
-          height: 50px;
-        }
-        .menu_name {
-          width: 100%;
-          font-size: 15px;
-          margin: 0;
-          p {
-            margin: 0;
+        .menu_title {
+          height: fit-content;
+          margin: 0 7px;
+          width: 5vw;
+          @media screen and (min-width: 700px) {
+            margin: 0 40px;
           }
         }
-        .menu_price {
-          width: 100%;
-          font-size: 13px;
-          margin: 0;
-          p {
+        .menu_child {
+          width: 64vw;
+          margin-left: auto;
+
+          .menu_img {
+            width: 100%;
+            height: 50px;
+          }
+          .menu_name {
+            width: 100%;
+            font-size: 15px;
             margin: 0;
+            p {
+              margin: 0;
+            }
+          }
+          .menu_price {
+            width: 100%;
+            font-size: 13px;
+            margin: 0;
+            p {
+              margin: 0;
+            }
           }
         }
       }
     }
   }
   .section_instagram {
-    padding: 20px;
     height: 200px;
-    @media screen and (min-width: 500px) {
-      padding: 20px 125px;
-    }
   }
   .section_shop_info {
-    padding: 20px;
-    @media screen and (min-width: 500px) {
-      padding: 20px 125px;
-    }
     .shop_info_detail {
       list-style: none;
       padding: 0;
@@ -302,12 +332,11 @@ body {
   .section_footer {
     padding: 14px;
     height: 22px;
-    background-color: #c3b4a9;
     p {
       width: max-content;
       margin: 0 auto;
       font-size: 13px;
-      color: #fff;
+      color: #1b1b1b;
     }
   }
 }
@@ -322,9 +351,13 @@ body {
 }
 #sec03 {
   //background-image: url(/img/background.png);
-  background-color: rgba(132, 188, 230, 0.05);
+  background-color: rgba(152, 125, 154, 0.05);
 }
 #sec04 {
+  //background-image: url(/img/background.png);
+  background-color: rgba(38, 132, 153, 0.05);
+}
+#sec05 {
   //background-image: url(/img/background.png);
   background-color: rgba(0, 0, 0, 0.05);
 }

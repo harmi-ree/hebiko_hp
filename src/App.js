@@ -16,13 +16,26 @@ function App() {
           </div>
         </header>
         <div class="article">
-          <div class="section" id="sec01">
+          <div class="section_top section_flame" id="sec01">
+            <div class="section_top_image"></div>
+            <div class="section_top_logo"></div>
+          </div>
+          <div class="section_flame" id="sec01">
             <div class="section_container">
               <p>やさしいへび子</p>
-              <p>おいしいおにぎりやいなり寿司を作っています。</p>
+              <p>おいしいおにぎりやいなり寿司を作っています.</p>
+            </div>
+            <div class="section_container2">
+              <p>お問い合わせ</p>
+              <p>070-8593-1128</p>
+              <p>
+                お休みの日もご予約承ります。
+                <br />
+                お気軽にお問い合わせくださいませ。
+              </p>
             </div>
           </div>
-          <div class="section_menu" id="sec02">
+          <div class="section_menu section_flame" id="sec02">
             <h2>メニュー</h2>
             <div class="menu_box">
               <div class="menu_box1">
@@ -88,7 +101,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div class="menu_box1">
+              <div class="menu_box1" id="sec02-01">
                 <div class="menu_title">
                   <h3>おにぎり</h3>
                 </div>
@@ -146,11 +159,14 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="section_instagram" id="sec03">
+          <div class="section_instagram section_flame" id="sec03">
             <h2>Instagram</h2>
             <Instagram />
           </div>
-          <div class="section_shop_info" id="sec04">
+          <div class="section_news section_flame" id="sec04">
+            <h2>お知らせ</h2>
+          </div>
+          <div class="section_shop_info section_flame" id="sec05">
             <div class="section_container">
               <h2>店舗情報</h2>
               <ul class="shop_info_detail">
@@ -209,7 +225,7 @@ function App() {
             </div>
           </div>
           <div class="section_footer" id="sec05">
-            <p>©︎ 2023 yasashiihebiko</p>
+            <p>©︎ 2023 やさしいへび子</p>
           </div>
         </div>
 
@@ -228,19 +244,22 @@ function App() {
             <div class="nav_wrapper_right_content">
               <ul class="nav_list">
                 <li class="nav_item">
-                  <a href="#sec01">へび子</a>
+                  <a href="#sec01">TOP</a>
                 </li>
                 <li class="nav_item">
                   <a href="#sec02">いなり寿司</a>
                 </li>
                 <li class="nav_item">
-                  <a href="#sec03">おにぎり</a>
+                  <a href="#sec02-01">おにぎり</a>
                 </li>
                 <li class="nav_item">
-                  <a href="#sec04">お問い合わせ</a>
+                  <a href="#sec03">Instagram</a>
                 </li>
                 <li class="nav_item">
-                  <a href="#sec04">店舗案内</a>
+                  <a href="#sec04">お知らせ</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#sec05">店舗案内</a>
                 </li>
               </ul>
             </div>
