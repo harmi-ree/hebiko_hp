@@ -8,7 +8,8 @@ body {
   color: #333333;
   background-attachment: fixed;
   z-index: 1;
-  font-family: "Shippori Mincho", serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "Shippori Mincho", serif;
+  font-size: 15px;
   transition: 0.7s;
 }
 
@@ -122,7 +123,9 @@ body {
 
 // コンテンツ
 // ---------------------------------------------
-
+.article_header {
+  z-index: 5;
+}
 .article {
   max-width: 700px;
   margin: 0 auto;
@@ -133,12 +136,12 @@ body {
   }
 
   .section_header {
-    padding: 20px;
+    padding: 0 20px;
     @media screen and (min-width: 500px) {
       padding: 20px 125px;
     }
     .section_header_container {
-      padding: 45px 10px 0 10px;
+      padding: 26px 10px 0 10px;
       width: 85%;
       position: fixed;
       display: flex;
@@ -196,13 +199,9 @@ body {
     .section_container {
       text-align: center;
       width: 100%;
-    }
-    .section_container2 {
-      text-align: center;
-      width: 100%;
       margin-top: 50px;
       width: fit-content;
-      margin: 50px auto 0 auto;
+      margin: 0 auto;
 
       p:nth-child(1) {
         margin: 0;
@@ -210,20 +209,25 @@ body {
         text-align: left;
       }
       p:nth-child(2) {
-        margin: 0 auto;
-        font-size: 24px;
-        padding: 11px;
+        margin: 6px auto;
+        font-size: 27px;
+        font-weight: bold;
         width: fit-content;
         letter-spacing: 0.3rem;
+        border-top: 1px solid #dfdfdf;
       }
     }
   }
 
   .section_top {
+    @media screen and (min-width: 700px) {
+      width: 450px;
+    }
+
     .section_top_image {
       background-image: url("img/top_background.jpg");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       width: 100%;
       height: 100vh;
       position: relative;
@@ -233,10 +237,23 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
-      width: 30%;
-      height: 111px;
+      width: 36%;
+      height: 3%;
       top: 95px;
-      left: 15%;
+
+      @media screen and (min-width: 700px) {
+        left: 20%;
+        width: 20%;
+      }
+    }
+    .section_top_text {
+      position: absolute;
+      top: 215px;
+      margin-left: 4%;
+      font-size: 14px;
+      p:first-child {
+        font-size: 20px;
+      }
     }
   }
 

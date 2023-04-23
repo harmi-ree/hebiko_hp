@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <main>
-        <header class="article">
+        <header class="article article_header">
           <div class="section_header">
             <div class="section_header_container">
               <div id="hamburger">
@@ -19,14 +19,20 @@ function App() {
           <div class="section_top section_flame" id="sec01">
             <div class="section_top_image"></div>
             <div class="section_top_logo"></div>
+            <div class="section_top_text">
+              <p>やさしいへび子</p>
+              <p>
+                おいしい
+                <br />
+                おにぎりやいなり寿司を
+                <br />
+                作っています.
+              </p>
+            </div>
           </div>
           <div class="section_flame" id="sec01">
             <div class="section_container">
-              <p>やさしいへび子</p>
-              <p>おいしいおにぎりやいなり寿司を作っています.</p>
-            </div>
-            <div class="section_container2">
-              <p>お問い合わせ</p>
+              <p>お問い合わせ ・ ご注文</p>
               <p>070-8593-1128</p>
               <p>
                 お休みの日もご予約承ります。
@@ -167,7 +173,7 @@ function App() {
             <h2>お知らせ</h2>
           </div>
           <div class="section_shop_info section_flame" id="sec05">
-            <div class="section_container">
+            <div>
               <h2>店舗情報</h2>
               <ul class="shop_info_detail">
                 <li>
