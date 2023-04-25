@@ -213,7 +213,7 @@ function App() {
                 <li>
                   <span class="shop_info_title">SNS</span>
                   <span class="shop_info_child">
-                    instagram（ 更新中 ! ）
+                    Instagram（ 更新中 ! ）
                     <br />
                     twitter （ 更新サボってます... ）
                   </span>
