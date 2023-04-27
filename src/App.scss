@@ -198,10 +198,8 @@ body {
     }
     .section_container {
       text-align: center;
-      width: 100%;
       margin-top: 50px;
-      width: fit-content;
-      margin: 0 auto;
+      margin: 0 30px;
 
       p:nth-child(1) {
         margin: 0;
@@ -210,11 +208,51 @@ body {
       }
       p:nth-child(2) {
         margin: 6px auto;
-        font-size: 27px;
+        font-size: 23px;
         font-weight: bold;
-        width: fit-content;
         letter-spacing: 0.3rem;
         border-top: 1px solid #dfdfdf;
+      }
+      p:nth-child(3) {
+        font-size: 13px;
+      }
+    }
+    .section_container_delivery {
+      text-align: center;
+      margin-top: 50px;
+      margin: 50px 30px 0 30px;
+      p:nth-child(1) {
+        margin: 0;
+        font-size: 13px;
+        text-align: left;
+      }
+      div {
+        height: 70px;
+        margin: 6px auto;
+        border-top: 1px solid #dfdfdf;
+      }
+    }
+    .section_container_payment {
+      text-align: center;
+      margin-top: 50px;
+      margin: 50px 30px 0 30px;
+
+      p:nth-child(1) {
+        margin: 0;
+        font-size: 13px;
+        text-align: left;
+      }
+      div {
+        margin: 6px auto;
+        border-top: 1px solid #dfdfdf;
+        background-color: white;
+        align-items: center;
+        height: 70px;
+        display: flex;
+        img {
+          width: 28%;
+          margin: 0 5px;
+        }
       }
     }
   }

@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.scss";
 import Instagram from "./components/Instagram";
+import paypay from "./img/paypay.png";
+import auPay from "./img/auPay.png";
+import dBarai from "./img/dBarai.png";
+import uber from "./img/uber-eats.svg";
 
 function App() {
   return (
@@ -39,6 +43,20 @@ function App() {
                 <br />
                 お気軽にお問い合わせくださいませ。
               </p>
+            </div>
+            <div class="section_container_delivery">
+              <p>デリバリーサービス</p>
+              <div>
+                <img src={uber} width="150px" height="70px"></img>
+              </div>
+            </div>
+            <div class="section_container_payment">
+              <p>ご利用可能なお支払い方法</p>
+              <div>
+                <img src={paypay}></img>
+                <img src={auPay}></img>
+                <img src={dBarai}></img>
+              </div>
             </div>
           </div>
           <div class="section_menu section_flame" id="sec02">
