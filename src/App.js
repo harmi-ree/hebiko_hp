@@ -5,32 +5,66 @@ import paypay from "./img/paypay.png";
 import auPay from "./img/auPay.png";
 import dBarai from "./img/dBarai.png";
 import uber from "./img/uber-eats.svg";
+import hebiko1 from "./img/hebiko_1.JPG";
+import hebiko2 from "./img/hebiko_2.JPG";
+import hebiko3 from "./img/hebiko_3.JPG";
+import hebiko_name from "./img/name.png";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [backgroundImageUrl, setBackgroundImageUrl] = useState(hebiko1);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const backgroundImages = [hebiko1, hebiko2, hebiko3];
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % backgroundImages.length;
+      setIsImageLoaded(false);
+      setTimeout(() => {
+        setBackgroundImageUrl(backgroundImages[currentIndex]);
+        setIsImageLoaded(true);
+      }, 500);
+    }, 6000);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
       <main>
-        <header class="article article_header">
-          <div class="section_header">
-            <div class="section_header_container">
-              <div id="hamburger">
-                <span></span>
+        <div class="article">
+          <div class="article_header">
+            <div class="section_header">
+              <div class="section_header_container">
+                <div id="hamburger">
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
-        </header>
-        <div class="article">
           <div class="section_top section_flame" id="sec01">
-            <div class="section_top_image"></div>
+            <div
+              className={`section_top_image ${
+                isImageLoaded ? "fade-in" : "fade-out"
+              }`}
+              style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+            />
             <div class="section_top_logo"></div>
             <div class="section_top_text">
-              <p>やさしいへび子</p>
+              <img src={hebiko_name} />
               <p>
-                おいしい
+                春弥生、木も花もつぼみを膨らませてきた頃
                 <br />
-                おにぎりやいなり寿司を
+                2021年3月16日、松原市の閑静な住宅街に
                 <br />
-                作っています.
+                やさしいへび子がオープンしました。
+                <br />
+                美味しいおにぎりやいなり寿司を
+                <br />
+                真心込めて、作っています。
               </p>
             </div>
           </div>
@@ -47,7 +81,12 @@ function App() {
             <div class="section_container_delivery">
               <p>デリバリーサービス</p>
               <div>
-                <img src={uber} width="150px" height="70px"></img>
+                <a
+                  href="https://www.ubereats.com/jp/store/%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E3%81%B8%E3%81%B2%E5%AD%90-yasashii-hebiko/eSfEegLIWcef10eDYQ48qA?diningMode=DELIVERY"
+                  target="_blank"
+                >
+                  <img src={uber} width="150px" height="70px"></img>
+                </a>
               </div>
             </div>
             <div class="section_container_payment">
@@ -230,11 +269,23 @@ function App() {
                 </li>
                 <li>
                   <span class="shop_info_title">SNS</span>
-                  <span class="shop_info_child">
-                    Instagram（ 更新中 ! ）
+                  <div class="shop_info_child">
+                    <a
+                      href="https://www.instagram.com/yasashiihebiko/"
+                      target="_blank"
+                    >
+                      <InstagramIcon />
+                      &nbsp;Instagram（ 更新中 ! ）
+                    </a>
                     <br />
-                    twitter （ 更新サボってます... ）
-                  </span>
+                    <a
+                      href="https://twitter.com/yasashiihebiko3"
+                      target="_blank"
+                    >
+                      <TwitterIcon />
+                      &nbsp;twitter （ 更新サボってます... ）
+                    </a>
+                  </div>
                 </li>
               </ul>
 
