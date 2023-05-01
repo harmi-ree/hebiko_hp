@@ -14,20 +14,6 @@ body {
   transition: 0.7s;
 }
 
-/* .bg01 {
-  background-image: url(/img/background.png);
-}
-.bg02 {
-  background-image: url(/img/background.png);
-}
-.bg03 {
-  background-image: url(/img/background.png);
-}
-.bg04 {
-  background-image: url(/img/background.png);
-}
- */
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -121,9 +107,6 @@ body {
     color: #fff !important;
   }
 }
-
-// コンテンツ
-// ---------------------------------------------
 .article_header {
   z-index: 6;
   pointer-events: none;
@@ -458,6 +441,50 @@ body {
   .section_instagram {
     height: 200px;
   }
+
+  .section_news_title {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #877a7a;
+    cursor: pointer;
+    line-height: 2rem;
+    &:hover {
+      background-color: #fef9e4;
+      border-radius: 5%;
+    }
+  }
+  .modal {
+    width: 90%;
+    margin: 0px auto 30px;
+    animation: fadeIn 0.5s ease-out 0s 1 normal backwards;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-2px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-content {
+      background-color: #fff;
+
+      p {
+        margin: 0;
+        padding: 20px 5px;
+
+        img {
+          width: 80%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+
   .section_shop_info {
     .shop_info_detail {
       list-style: none;

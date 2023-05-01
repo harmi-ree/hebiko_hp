@@ -51,12 +51,12 @@ const Info = () => {
                   target="_blank"
                 >
                   <InstagramIcon />
-                  &nbsp;Instagram（ 更新中 ! ）
+                  &nbsp;&nbsp;&nbsp;Instagram（ 更新中 ! ）
                 </a>
                 <br />
                 <a href="https://twitter.com/yasashiihebiko3" target="_blank">
                   <TwitterIcon />
-                  &nbsp;twitter （ 更新サボってます... ）
+                  &nbsp;&nbsp;&nbsp;twitter （ 更新サボってます... ）
                 </a>
               </div>
             </li>

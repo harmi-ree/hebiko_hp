@@ -17,6 +17,7 @@ function App() {
           <Menu />
           <div class="section_instagram section_flame" id="sec03">
             <h2>Instagram</h2>
+            <p>改装中...</p>
             <Instagram />
           </div>
           <News />

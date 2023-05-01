@@ -9,6 +9,7 @@ import hebiko3 from "../img/hebiko_3.JPG";
 import hebiko4 from "../img/hebiko_4.jpg";
 import hebiko_name from "../img/name.png";
 import { useState, useEffect } from "react";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const Top = () => {
   const [backgroundImageUrl, setBackgroundImageUrl] = useState(hebiko4);
@@ -52,6 +53,7 @@ const Top = () => {
             <br />
             真心込めて、作っています。
           </p>
+          <FavoriteBorderIcon />
         </div>
         <div class="section_container_tel">
           <p>お問い合わせ ・ ご注文</p>
