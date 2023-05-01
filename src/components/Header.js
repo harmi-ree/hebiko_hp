@@ -99,7 +99,7 @@ const Header = () => {
                 <img src={hebiko_name} />
                 <div class="nav_footer_sns">
                   <div>
-                    <span>Follow us ...</span>
+                    <span>Follow us ___</span>
                   </div>
                   <div>
                     <a
