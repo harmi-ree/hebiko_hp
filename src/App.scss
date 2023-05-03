@@ -4,7 +4,7 @@
 // ---------------------------------------------
 
 body {
-  background-image: url("/img/background_sp.png");
+  background-image: url("/img/background.png");
   background-position: center;
   background-size: cover;
   color: #333333;
@@ -14,9 +14,9 @@ body {
   font-size: 13px;
   transition: 0.7s;
   letter-spacing: 0.09rem;
-  @media screen and (min-width: 700px) {
-    background-image: url("/img/background.png");
-  }
+  // @media screen and (min-width: 700px) {
+  //   background-image: url("/img/background.png");
+  // }
 }
 
 .wrapper {
