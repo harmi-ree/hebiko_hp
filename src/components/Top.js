@@ -57,7 +57,9 @@ const Top = () => {
         </div>
         <div class="section_container_tel">
           <p>お問い合わせ ・ ご注文</p>
-          <p>070-8593-1128</p>
+          <p>
+            <a href="tel:070-8593-1128">070-8593-1128</a>
+          </p>
           <p>
             お休みの日もご予約承ります。
             <br />

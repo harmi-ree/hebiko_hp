@@ -19,7 +19,11 @@ const Info = () => {
             </li>
             <li>
               <span class="shop_info_title">TEL</span>
-              <span class="shop_info_child">070-8593-1128</span>
+              <span class="shop_info_child">
+                <a class="shop_info_child_tel" href="tel:070-8593-1128">
+                  070-8593-1128
+                </a>
+              </span>
             </li>
             <li>
               <span class="shop_info_title">住所</span>
@@ -47,6 +51,7 @@ const Info = () => {
               <span class="shop_info_title">SNS</span>
               <div class="shop_info_child">
                 <a
+                  class="shop_info_child_sns"
                   href="https://www.instagram.com/yasashiihebiko/"
                   target="_blank"
                 >
@@ -54,7 +59,11 @@ const Info = () => {
                   &nbsp;&nbsp;&nbsp;Instagram（ 更新中 ! ）
                 </a>
                 <br />
-                <a href="https://twitter.com/yasashiihebiko3" target="_blank">
+                <a
+                  class="shop_info_child_sns"
+                  href="https://twitter.com/yasashiihebiko3"
+                  target="_blank"
+                >
                   <TwitterIcon />
                   &nbsp;&nbsp;&nbsp;twitter （ 更新サボってます... ）
                 </a>
