@@ -99,9 +99,6 @@ const Header = () => {
                 <img src={hebiko_name} />
                 <div class="nav_footer_sns">
                   <div>
-                    <span>Follow us ___</span>
-                  </div>
-                  <div>
                     <a
                       href="https://www.instagram.com/yasashiihebiko/"
                       target="_blank"

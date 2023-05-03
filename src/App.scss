@@ -4,8 +4,10 @@
 // ---------------------------------------------
 
 body {
-  background-image: url("/img/background.png");
+  background-image: url("/img/background_sp.png");
+  background-position: center;
   background-size: cover;
+
   color: #333333;
   background-attachment: fixed;
   z-index: 1;
@@ -13,6 +15,9 @@ body {
   font-size: 13px;
   transition: 0.7s;
   letter-spacing: 0.09rem;
+  @media screen and (min-width: 700px) {
+    background-image: url("/img/background.png");
+  }
 }
 
 .wrapper {
@@ -89,6 +94,9 @@ body {
           display: inline-block;
           color: inherit;
           text-decoration: none;
+          &:hover {
+            color: #ac8c6e;
+          }
         }
       }
 
@@ -235,8 +243,9 @@ body {
       width: 60%;
     }
     .nav_footer_sns {
-      width: 41%;
-      margin: 0 auto;
+      letter-spacing: 0;
+      width: 70px;
+      margin: 10px auto;
       justify-content: space-between;
       display: flex;
       align-items: center;
@@ -345,6 +354,9 @@ body {
         a {
           text-decoration: none;
           color: #000;
+          &:hover {
+            color: #ac8c6e;
+          }
         }
       }
       p:nth-child(3) {
@@ -359,11 +371,17 @@ body {
         margin: 0;
         font-size: 13px;
         text-align: left;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #dfdfdf;
       }
       div {
         height: 70px;
         margin: 6px auto;
-        border-top: 1px solid #dfdfdf;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 180px;
+        justify-content: space-between;
       }
     }
     .section_container_payment {
@@ -454,7 +472,7 @@ body {
     cursor: pointer;
     line-height: 2rem;
     &:hover {
-      background-color: #e7f3f7;
+      color: #ac8c6e;
     }
   }
   .modal {
@@ -508,16 +526,21 @@ body {
           display: block;
           margin: 0.5rem 0;
           .shop_info_child_sns {
-            border-bottom: 3px solid #fff;
             text-decoration: none;
             color: black;
             display: flex;
             align-items: center;
             width: fit-content;
+            &:hover {
+              color: #ac8c6e;
+            }
           }
           .shop_info_child_tel {
             text-decoration: none;
             color: black;
+            &:hover {
+              color: #ac8c6e;
+            }
           }
         }
       }
@@ -565,7 +588,7 @@ body {
 }
 #sec04 {
   //background-image: url(/img/background.png);
-  background-color: rgba(38, 132, 153, 0.05);
+  background-color: rgba(153, 97, 38, 0.05);
 }
 #sec05 {
   //background-image: url(/img/background.png);

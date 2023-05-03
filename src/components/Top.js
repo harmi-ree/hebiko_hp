@@ -10,6 +10,7 @@ import hebiko4 from "../img/hebiko_4.jpg";
 import hebiko_name from "../img/name.png";
 import { useState, useEffect } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const Top = () => {
   const [backgroundImageUrl, setBackgroundImageUrl] = useState(hebiko4);
@@ -75,6 +76,7 @@ const Top = () => {
             >
               <img src={uber} width="150px" height="70px"></img>
             </a>
+            <OpenInNewIcon sx={{ fontSize: 15 }} />
           </div>
         </div>
         <div class="section_container_payment">
