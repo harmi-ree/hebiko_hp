@@ -84,7 +84,7 @@ body {
     height: 100%;
 
     .nav_list {
-      font-size: 18px;
+      font-size: 16px;
       transform: translateY(-50%);
       list-style: none;
       padding: 0;
@@ -232,6 +232,7 @@ body {
   .sp-menu__link {
     display: block;
     width: 100%;
+    font-family: "Zen Maru Gothic", sans-serif;
     font-size: 13px;
     box-sizing: border-box;
     color: #ffffff;
@@ -450,6 +451,7 @@ body {
             margin: 0;
             p {
               margin: 0;
+              font-family: "Zen Maru Gothic", sans-serif;
             }
           }
           .menu_price {
@@ -458,6 +460,7 @@ body {
             margin: 0;
             p {
               margin: 0;
+              font-family: "Zen Maru Gothic", sans-serif;
             }
           }
         }
@@ -573,12 +576,14 @@ body {
     }
   }
   .section_footer {
+    font-family: "Zen Maru Gothic", sans-serif;
     padding: 14px;
     height: 22px;
     p {
       width: max-content;
       margin: 0 auto;
-      font-size: 10px;
+      font-size: 12px;
+      font-weight: 700;
       color: #1b1b1b;
     }
   }
