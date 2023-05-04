@@ -54,7 +54,7 @@ const Top = () => {
             <br />
             真心込めて、作っています。
           </p>
-          <FavoriteBorderIcon />
+          <FavoriteBorderIcon sx={{ fontSize: 20 }} />
         </div>
         <div class="section_container_tel">
           <p>お問い合わせ ・ ご注文</p>
