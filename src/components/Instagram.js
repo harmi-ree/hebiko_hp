@@ -12,8 +12,8 @@ const Instagram = () => {
   // useEffect(() => {
   //   const user_name = "yasashiihebiko"; //ビジネスorクリエイターアカウントの必要あり
   //   const access_token =
-  //     "EAAMt8ZBga5dIBAL3ONNHwqgv7zoc9nGu61FdYxEbZCZCTDRZBAreeZA9iekcwkrH1cu5mJrzOBXLf5AhV56HH4ZAH2wLHB9TZAnZBZALTE8qCUUomZBrEakWfZC0y9re67DC8P7NMk4pcYvnu08cIMfrFikKrvoYZA9lk12JWaEbnvEqkr9dHGjx0URCHJQTUIGuvLAZD";
-  //   const user_id = "107627431800758";
+  //     "XXXXXXXXXXXX";
+  //   const user_id = "XXXXXX";
   //   const get_count = 5; //取得したい投稿数
   //   axios
   //     /* .get(
