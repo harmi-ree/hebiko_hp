@@ -348,14 +348,15 @@ body {
         margin: 0;
         font-size: 12px;
         text-align: left;
+        border-bottom: 1px solid #dfdfdf;
+        padding-bottom: 5px;
       }
       p:nth-child(2) {
-        margin: 6px auto;
-        font-size: 23px;
+        margin: 18px auto;
+        font-size: 19px;
         font-family: "Shippori Mincho", serif;
         font-weight: bold;
         letter-spacing: 0.3rem;
-        border-top: 1px solid #dfdfdf;
         a {
           text-decoration: none;
           color: #000;
