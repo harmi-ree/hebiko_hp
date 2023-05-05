@@ -269,6 +269,9 @@ body {
 
   .section_top {
     padding: 68px 30px 30px 30px;
+    @media screen and (min-width: 500px) {
+      padding: 60px 125px;
+    }
     @media screen and (min-width: 700px) {
       width: 450px;
     }
